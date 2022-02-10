@@ -134,6 +134,7 @@ GameObject:
   - component: {fileID: 1911120864}
   - component: {fileID: 1911120863}
   - component: {fileID: 1911120862}
+  - component: {fileID: 1911120865}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -207,6 +208,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1911120865
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1911120861}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9791f74bfc4c694d9105f5bbc7b1cab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  basketPrefab: {fileID: 4542904387867364736, guid: 3f1982a968d12dc438041580afaf726a, type: 3}
+  numBaskets: 3
+  basketBottomY: -14
+  basketSpacingY: 2
 --- !u!1 &2062472209
 GameObject:
   m_ObjectHideFlags: 0
@@ -308,6 +325,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -1707517307881408542, guid: 7faa0ddd7baa79645bc2c92eb2efdec7, type: 3}
+      propertyPath: speed
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: -1707517307881408542, guid: 7faa0ddd7baa79645bc2c92eb2efdec7, type: 3}
+      propertyPath: applePrefab
+      value: 
+      objectReference: {fileID: 5458377579256572006, guid: 305c1fbae92210c49bddb54280f9aa18, type: 3}
+    - target: {fileID: -1707517307881408542, guid: 7faa0ddd7baa79645bc2c92eb2efdec7, type: 3}
+      propertyPath: chanceToChangeDirections
+      value: 0.02
+      objectReference: {fileID: 0}
+    - target: {fileID: 2170476463782487948, guid: 7faa0ddd7baa79645bc2c92eb2efdec7, type: 3}
+      propertyPath: m_IsKinematic
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2170476463782487950, guid: 7faa0ddd7baa79645bc2c92eb2efdec7, type: 3}
       propertyPath: m_Name
       value: AppleTree
@@ -322,7 +355,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2170476463782487951, guid: 7faa0ddd7baa79645bc2c92eb2efdec7, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 10
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 2170476463782487951, guid: 7faa0ddd7baa79645bc2c92eb2efdec7, type: 3}
       propertyPath: m_LocalPosition.z
@@ -356,5 +389,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: 7faa0ddd7baa79645bc2c92eb2efdec7, type: 3}
