@@ -9,6 +9,10 @@ public class Ability_to_move : MonoBehaviour
 
     private Rigidbody rb;
 
+void Start() {
+
+    rb = GetComponent<Rigidbody>();
+}
 
     void FixedUpdate()
     {
