@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Cannon_Movement : MonoBehaviour
@@ -18,14 +16,14 @@ public class Cannon_Movement : MonoBehaviour
 
     void Start()
     {
-        Invoke("DropApple", 2f);
+        Invoke("Launch_Projectile", 2f);
 
     }
 
     void DropApple()
     {
-        GameObject apple = Instantiate<GameObject>(applePrefab);
-        apple.transform.position = transform.position;
+        GameObject Cannon_Ball = Instantiate<GameObject>(applePrefab);
+        Cannon_Ball.transform.position = transform.position;
         Invoke("DropApple", secondsBetweenAppleDrops);
     }
 
